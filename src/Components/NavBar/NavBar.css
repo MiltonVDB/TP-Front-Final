@@ -1,0 +1,55 @@
+nav {
+
+    background-color: #EDEFF2;
+    height: 80px;
+    font-size: 30px;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid #d1d3d6;
+    display: block;
+    z-index: 99;
+
+}
+
+.logo-icon{
+
+    color: #4A55A2;
+    font-size: 35px;
+
+}
+
+.name-brand{
+
+    color: #4A55A2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+
+}
+
+.form-menu{
+
+    color: var(--gray-blue-grey-blue-60, #6B7A99);
+    /* Bold/Bold 14 */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+
+}
+
+.home-menu{
+
+
+    
+    color: #C3CAD9";
+
+
+}
+
+.cart-menu{
+
+    color: #C3CAD9";
+
+
+}
