@@ -20,7 +20,62 @@ const HomePage = () => {
 
       <div className='row'>
 
-        <div className='col-9'>
+        <div className='col-12 col-md-3 order-md-2 mb-3'>
+
+          <div className='search-item'>
+
+            <div className="p-3">
+
+              <label>Buscador</label>
+
+            </div>
+
+            <hr className='m-0'/>
+
+            <div className="p-3">
+              <div className="searc-input y-center">
+                <input className='search' placeholder='Ingrse su busqueda' value={searchProduct} onChange={(e) => setSearchProduct(e.target.value)}/>
+                <i className="bi bi-search"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <div className='search-item'>
+
+            <div className="p-3">
+
+              <label>Precio</label>
+
+            </div>
+
+            <hr className='m-0'/>
+            
+            <div className='p-3 currecy-wrap'>
+
+              <div className='y-center py-2'>
+
+                <label className='mm'>Min</label>
+
+                <input className='minmax px-2' type="number" value={min} onChange={(e) => setMin(Number(e.target.value))}/>
+                
+              </div>
+
+              <div className='y-center py-2'>
+
+                <label className='mm'>Max</label>
+
+                <input className='minmax px-2' type="number" value={max} onChange={(e) => setMax(Number(e.target.value))}/>
+
+              </div>
+
+            </div >
+
+          </div>
+
+        </div>
+      
+        <div className='col-12 col-md-9 order-md-1'>
 
           <div className='row'>
 
@@ -30,38 +85,7 @@ const HomePage = () => {
 
         </div>
 
-        <div className='col-3'>
-
-          <div>
-
-            <p><i className="bi bi-search"></i>  Buscar</p>
-
-            <input className='search-menu' value={searchProduct} onChange={(e) => setSearchProduct(e.target.value)}/>
-
-          </div>
-
-          <div className='y-center'>
-
-            <p>Precio Minimo</p>
-            <div className='currecy-wrap'>
-              
-              <span className='currency-code'>$</span>
-
-              <input className='minmax' type="number" value={min} onChange={(e) => setMin(Number(e.target.value))}/>
-
-
-            </div>
-
-            <p>Precio Maximo</p>
-
-            <input className='minmax' type="text" value={max} onChange={(e) => setMax(Number(e.target.value))}/>
-
-          </div>
-
-        </div>
-
       </div>
-
     </div>
     
   )

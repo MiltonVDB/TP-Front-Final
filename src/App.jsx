@@ -1,7 +1,7 @@
 import React from 'react'
 import { HomePage, DetailPage, CartPage, FormPage} from './Screens'
-import {Route, Routes, NavLink} from 'react-router-dom'
-import { NavBar } from './Components'
+import {Route, Routes} from 'react-router-dom'
+import { NavBar, Footer} from './Components'
 
 
 
@@ -13,8 +13,6 @@ function App() {
 
       <NavBar/>
 
-      
-
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/detail/:id' element={<DetailPage/>}/>
@@ -22,7 +20,7 @@ function App() {
         <Route path='/form' element={<FormPage/>}/>
       </Routes>
 
-      
+      <Footer/>
       
     </>
   )

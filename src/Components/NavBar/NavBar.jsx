@@ -1,33 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {NavLink} from 'react-router-dom';
 import './NavBar.css';
-import { useCustomContext } from '../../ContextManager/ContextProvider';
-
 
 const NavBar = () => {
-
   return (
     
-    <nav className='y-center mb-4'>
+    <nav className='y-center mb-3'>
 
       <div className='container y-center'>
         
-        <div className='logo-icon'>
+        <NavLink className='y-center' to='/'>
+          <i className="bi bi-bank logo-icon me-3"></i>
+          <h5 className='logo-name m-0'>Market Center</h5>
+        </NavLink>
 
-            <i className="bi bi-bank"></i>
+        <div className='y-center ms-auto'>
+          <NavLink className='form-menu me-3' to='/form'>Contacto</NavLink>
+
+          <NavLink to='/'><i className="bi bi-house-door-fill nav-item me-3"></i></NavLink>
+
+          <NavLink to='/cart'><i className="bi bi-cart-fill nav-item me-3"></i></NavLink>
 
         </div>
-
-        <h5 className='name-brand'>Market Center</h5>
-
-        
-        
-
-        <NavLink className='form-menu' to='/form'>Contacto</NavLink>
-
-        <NavLink className='home-menu' to='/'><i className="bi bi-house-door-fill"></i></NavLink>
-
-        <NavLink className='cart-menu' to='/cart'><i className="bi bi-cart-fill"></i></NavLink>
 
       </div>
 
